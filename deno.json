@@ -1,8 +1,8 @@
 {
   "tasks": {
-    "dev": "deno run -A --node-modules-dir npm:vite",
-    "build": "deno run -A --node-modules-dir npm:vite build",
-    "preview": "deno run -A --node-modules-dir npm:vite preview",
+    "dev": "deno run -A npm:vite",
+    "build": "deno run -A npm:vite build",
+    "preview": "deno run -A npm:vite preview",
     "serve": "deno run --allow-net --allow-read jsr:@std/http@1/file-server dist/"
   },
   "compilerOptions": {
@@ -16,8 +16,11 @@
     "@types/react": "npm:@types/react@^19.0.10",
     "@types/react-dom": "npm:@types/react-dom@^19.0.4",
     "@vitejs/plugin-react-swc": "npm:@vitejs/plugin-react-swc@^3.8.0",
+    "prettier": "npm:prettier@^3.5.3",
+    "prettier-plugin-tailwindcss": "npm:prettier-plugin-tailwindcss@^0.6.11",
     "react": "npm:react@^19.0.0",
     "react-dom": "npm:react-dom@^19.0.0",
     "vite": "npm:vite@^6.1.1"
-  }
+  },
+  "nodeModulesDir": "auto"
 }
