@@ -1,6 +1,7 @@
+import { Switch } from './Switch.tsx'
+
 // @ts-types="@types/react"
 import { useState } from 'react'
-import { Switch } from './Switch.tsx'
 
 export const SwitchDefaultController = () => {
   const [checked, setChecked] = useState(false)
