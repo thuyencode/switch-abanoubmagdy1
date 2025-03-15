@@ -1,5 +1,7 @@
 # Switch by AbanoubMagdy1
 
+![Screenshot](./screenshots/switch-abanoubmagdy1.png)
+
 My implementation of [Switch](https://uiverse.io/AbanoubMagdy1/fluffy-octopus-90) by [AbanoubMagdy1](https://uiverse.io/profile/AbanoubMagdy1) in Tailwind CSS and React for someone on Discord.
 
 ## Running
