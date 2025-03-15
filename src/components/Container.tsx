@@ -1,8 +1,11 @@
 // @ts-types="@types/react"
-import { type PropsWithChildren } from 'react'
+import { type ComponentProps, type PropsWithChildren } from 'react'
+import { cn } from '../lib/utils.ts'
 
-export const Container = ({ children }: PropsWithChildren) => (
-  <div className='flex h-dvh w-dvw flex-col items-center justify-center gap-5'>
+type Props = PropsWithChildren<Pick<ComponentProps<'div'>, 'className'>>
+
+export const Container = ({ className, children }: Props) => (
+  <div className={cn('flex items-center justify-center', className)}>
     {children}
   </div>
 )

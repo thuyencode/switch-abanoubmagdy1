@@ -6,7 +6,7 @@ import {
 } from './components/index.ts'
 
 const App = () => (
-  <Container>
+  <Container className='h-dvh w-dvw flex-col gap-5'>
     <Credit />
     <SwitchDefaultController />
     <SourceCode />
