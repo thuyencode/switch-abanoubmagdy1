@@ -5,5 +5,6 @@ import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [deno(), react(), tailwindcss()]
+  plugins: [deno(), react(), tailwindcss()],
+  base: '/switch-abanoubmagdy1/'
 })
