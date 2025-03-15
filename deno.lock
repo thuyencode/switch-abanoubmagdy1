@@ -4,12 +4,17 @@
     "npm:@deno/vite-plugin@^1.0.4": "1.0.4_vite@6.2.2",
     "npm:@tailwindcss/vite@^4.0.14": "4.0.14_vite@6.2.2_@types+node@22.12.0_lightningcss@1.29.2",
     "npm:@types/node@*": "22.12.0",
+    "npm:@types/react-dom@18": "18.3.5_@types+react@18.3.18",
     "npm:@types/react-dom@^19.0.4": "19.0.4_@types+react@19.0.10",
+    "npm:@types/react@18": "18.3.18",
     "npm:@types/react@^19.0.10": "19.0.10",
     "npm:@vitejs/plugin-react-swc@^3.8.0": "3.8.0_vite@6.2.2",
     "npm:prettier-plugin-tailwindcss@~0.6.11": "0.6.11_prettier@3.5.3",
     "npm:prettier@^3.5.3": "3.5.3",
+    "npm:react-dom@18": "18.3.1_react@18.3.1",
     "npm:react-dom@19": "19.0.0_react@19.0.0",
+    "npm:react@*": "19.0.0",
+    "npm:react@18": "18.3.1",
     "npm:react@19": "19.0.0",
     "npm:tailwindcss@^4.0.14": "4.0.14",
     "npm:vite@*": "6.2.2",
@@ -286,10 +291,26 @@
         "undici-types"
       ]
     },
+    "@types/prop-types@15.7.14": {
+      "integrity": "sha512-gNMvNH49DJ7OJYv+KAKn0Xp45p8PLl6zo2YnvDIbTd4J6MER2BmWN49TG7n9LvkyihINxeKW8+3bfS2yDC9dzQ=="
+    },
+    "@types/react-dom@18.3.5_@types+react@18.3.18": {
+      "integrity": "sha512-P4t6saawp+b/dFrUr2cvkVsfvPguwsxtH6dNIYRllMsefqFzkZk5UIjzyDOv5g1dXIPdG4Sp1yCR4Z6RCUsG/Q==",
+      "dependencies": [
+        "@types/react@18.3.18"
+      ]
+    },
     "@types/react-dom@19.0.4_@types+react@19.0.10": {
       "integrity": "sha512-4fSQ8vWFkg+TGhePfUzVmat3eC14TXYSsiiDSLI0dVLsrm9gZFABjPy/Qu6TKgl1tq1Bu1yDsuQgY3A3DOjCcg==",
       "dependencies": [
-        "@types/react"
+        "@types/react@19.0.10"
+      ]
+    },
+    "@types/react@18.3.18": {
+      "integrity": "sha512-t4yC+vtgnkYjNSKlFx1jkAhH8LgTo2N/7Qvi83kdEaUtMDiwpbLAktKDaAMlRcJ5eSxZkH74eEGt1ky31d7kfQ==",
+      "dependencies": [
+        "@types/prop-types",
+        "csstype"
       ]
     },
     "@types/react@19.0.10": {
@@ -357,6 +378,9 @@
     "jiti@2.4.2": {
       "integrity": "sha512-rg9zJN+G4n2nfJl5MW3BMygZX56zKPNVEYYqq7adpmMh4Jn2QNEwhvQlFy6jPVdcod7txZtKHWnyZiA3a0zP7A=="
     },
+    "js-tokens@4.0.0": {
+      "integrity": "sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ=="
+    },
     "lightningcss-darwin-arm64@1.29.2": {
       "integrity": "sha512-cK/eMabSViKn/PG8U/a7aCorpeKLMlK0bQeNHmdb7qUnBkNPnL+oV5DjJUo0kqWsJUapZsM4jCfYItbqBDvlcA=="
     },
@@ -403,6 +427,12 @@
         "lightningcss-win32-x64-msvc"
       ]
     },
+    "loose-envify@1.4.0": {
+      "integrity": "sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==",
+      "dependencies": [
+        "js-tokens"
+      ]
+    },
     "nanoid@3.3.9": {
       "integrity": "sha512-SppoicMGpZvbF1l3z4x7No3OlIjP7QJvC9XR7AhZr1kL133KHnKPztkKDc+Ir4aJ/1VhTySrtKhrsycmrMQfvg=="
     },
@@ -426,11 +456,25 @@
     "prettier@3.5.3": {
       "integrity": "sha512-QQtaxnoDJeAkDvDKWCLiwIXkTgRhwYDEQCghU9Z6q03iyek/rxRh/2lC3HB7P8sWT2xC/y5JDctPLBIGzHKbhw=="
     },
+    "react-dom@18.3.1_react@18.3.1": {
+      "integrity": "sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==",
+      "dependencies": [
+        "loose-envify",
+        "react@18.3.1",
+        "scheduler@0.23.2"
+      ]
+    },
     "react-dom@19.0.0_react@19.0.0": {
       "integrity": "sha512-4GV5sHFG0e/0AD4X+ySy6UJd3jVl1iNsNHdpad0qhABJ11twS3TTBnseqsKurKcsNqCEFeGL3uLpVChpIO3QfQ==",
       "dependencies": [
-        "react",
-        "scheduler"
+        "react@19.0.0",
+        "scheduler@0.25.0"
+      ]
+    },
+    "react@18.3.1": {
+      "integrity": "sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==",
+      "dependencies": [
+        "loose-envify"
       ]
     },
     "react@19.0.0": {
@@ -460,6 +504,12 @@
         "@rollup/rollup-win32-x64-msvc",
         "@types/estree",
         "fsevents"
+      ]
+    },
+    "scheduler@0.23.2": {
+      "integrity": "sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ==",
+      "dependencies": [
+        "loose-envify"
       ]
     },
     "scheduler@0.25.0": {
