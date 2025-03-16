@@ -9,17 +9,7 @@ export const ThemeToggle = () => {
   const [checked, setChecked] = useState(false)
 
   useEffect(() => {
-    switch (checked) {
-      case true:
-        document.documentElement.classList.add('dark')
-        document.documentElement.classList.remove('light')
-        break
-
-      default:
-        document.documentElement.classList.add('light')
-        document.documentElement.classList.remove('dark')
-        break
-    }
+    document.documentElement.classList.toggle('dark')
   }, [checked])
 
   const toggle = () => {
