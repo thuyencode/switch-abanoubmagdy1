@@ -1,3 +1,4 @@
+import { MoonIcon, SunIcon } from './components/icons/index.ts'
 import {
   Container,
   Credit,
@@ -8,7 +9,13 @@ import {
 const App = () => (
   <Container className='h-dvh w-dvw flex-col gap-6 dark:bg-zinc-900'>
     <Credit />
-    <ThemeToggle />
+
+    <Container className='gap-3'>
+      <SunIcon className='dark:invert' />
+      <ThemeToggle />
+      <MoonIcon className='dark:invert' />
+    </Container>
+
     {/* <SwitchDefaultController /> */}
     <SourceCode />
   </Container>
