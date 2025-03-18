@@ -6,7 +6,7 @@ interface Props {
 }
 
 export const Switch = ({ checked, toggle }: Props) => (
-  <label className='relative inline-block h-[2em] w-[3.5em] text-[17px]'>
+  <label className='relative inline-block h-[2em] w-[3.5em] text-[17px] [--circle-dim:1.4em]'>
     <input
       className='h-0 w-0 opacity-0'
       type='checkbox'
